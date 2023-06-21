@@ -1,0 +1,400 @@
+@use "base" as *;
+.main {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #f3f3f9;
+  
+    .container {
+      .row {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        .graph-area {
+            width: 62%;
+          .revenue-card {
+            box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+  
+            width: 100%;
+            border-radius: 7px;
+            background-color: white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            color: #4c5359;
+  
+            .revenue-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 1rem;
+              .left {
+                .title {
+                  font-weight: 500;
+                  font-size: 1.2rem;
+                }
+              }
+              .right {
+                
+                .buttons {
+                  display: flex;
+                  gap: 0.5rem;
+  
+                  .btn {
+                    color: #80a9f5;
+                    background-color: #eaf1fe;
+                    border: none;
+                    outline: none;
+                    height: 2rem;
+                    width: 2.5rem;
+                    text-align: center;
+                    border-radius: 7px;
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+  
+            .card-amount {
+              display: flex;
+            //   padding-bottom: 1rem;
+  
+              .col-md-3 {
+                width: 25%;
+                // width: 100%;
+                .sub-card {
+                  background-color: #fdfdfe;
+                  border: 0.5px dashed#e2e3e7;
+                  text-align: center;
+                  padding:1rem;
+                  // height: 5rem;
+                  // width: 5rem;
+                  list-style: none;
+  
+                  .amount {
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                  }
+                  .details {
+                    color: gray;
+                  }
+                }
+              }
+            }
+          }
+  
+            .graph-img img {
+                padding: 2rem 1rem 2rem 1rem;
+                width: 100%;
+            }
+          }
+  
+         .location-area{
+          width: 36%;
+          .sales-card {
+            background-color: white;
+            box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+            border-radius: 7px;
+            width: 100%;
+            padding-bottom: 2rem;
+  
+            .sales-header {
+              display: flex;
+              
+              justify-content: space-between;
+              border: 1px white solid;
+              padding: 1rem;
+  
+              .sales-title {
+                color: #4c5359;
+                 
+                font-weight: 500;
+                font-size: 1.2rem;
+              }
+              .btn-sales {
+                border: none;
+                outline: none;
+                padding: 0.5rem;
+                border-radius: 5px;
+              }
+            }
+  
+            .location-img {
+            
+
+           .location{
+            width: 100%;
+           }
+            }
+            .progress {
+              padding:1rem 1.5rem 0rem 1.5rem;
+              .progress-1 {
+                list-style: none;
+                // padding-top: 0.5rem;
+  
+                .country-name {
+                  display: flex;
+                  justify-content: space-between;
+  
+                  .text {
+                    font-size: 1rem;
+                    font-weight: 400;
+                  }
+                  .percentage {
+                    font-size: 1rem;
+                    font-weight: 400;
+                  }
+                }
+  
+                .progress-bar {
+                  position: relative;
+                  padding-top: 0.5rem;
+  
+                  .full {
+                    width: 100%;
+                    height: 6px;
+                    background-image: linear-gradient(
+                      45deg,
+                      rgba(255, 255, 255, 0.15) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, 0.15) 50%,
+                      rgba(255, 255, 255, 0.15) 75%,
+                      transparent 75%,
+                      transparent
+                    );
+                
+                     background-color: #eff2f7;
+                    border-radius: 5px;
+                  }
+                  .half {
+                    position: absolute;
+                    top: 0.5rem;
+                    border-radius: 5px;
+                    height: 6px;
+                    width: 75%;
+                    background-color: #42538a;
+                  }
+                }
+              }
+            }
+          }
+         }
+        }
+      }
+    }
+  
+
+
+
+  @media only screen and (max-width: 1024px) and (min-width: 500px) {
+    .main {
+     
+    
+      .container {
+        .row {
+         flex-direction: column;
+         align-items: center;
+  
+          .graph-area {
+              width: 100%;
+            .revenue-card {
+             
+    
+              .revenue-header {
+              
+                .left {
+                  .title {
+                   
+                  }
+                }
+                .right {
+                  
+                  .buttons {
+                    
+    
+                    .btn {
+                     
+                    }
+                  }
+                }
+              }
+    
+              .card-amount {
+    
+                .col-md-3 {
+                  
+                  .sub-card {
+                   
+    
+                    .amount {
+                   
+                    }
+                    .details {
+                    
+                    }
+                  }
+                }
+              }
+            }
+    
+              .graph-img img {
+                 
+              }
+            }
+    
+           .location-area{
+            width: 100%;
+            .sales-card {
+             
+    
+              .sales-header {
+               
+    
+                .sales-title {
+                
+                }
+                .btn-sales {
+                
+                }
+              }
+    
+              .location-img {
+              
+  
+             .location{
+              
+             }
+              }
+              .progress {
+                .progress-1 {
+    
+                  .country-name {
+    
+                    .text {
+                    }
+                    .percentage {
+                    }
+                  }
+    
+                  .progress-bar {
+    
+                    .full {
+                    }
+                    .half {
+                    }
+                  }
+                }
+              }
+            }
+           }
+          }
+        }
+      }
+  }
+
+  @media only screen and (max-width: 500px) and (min-width: 320px) {
+    .main {
+     
+    padding: 1rem;
+      .container {
+        .row {
+         flex-direction: column;
+         align-items: center;
+  
+          .graph-area {
+              width: 100%;
+            .revenue-card {
+             
+    
+              .revenue-header {
+              
+                .left {
+                  .title {
+                   font-size: 1rem;
+                  }
+                }
+                .right {
+                  
+                  .buttons {
+                    
+    
+                    .btn {
+                      font-size: 0.6rem;
+                      height: 1rem;
+                      width: 2rem;
+                    }
+                  }
+                }
+              }
+    
+              .card-amount {
+                flex-direction: column;
+                align-items: center;
+                .col-md-3 {
+                  width: 100%;
+                  .sub-card {
+                   
+    
+                    .amount {
+                   
+                    }
+                    .details {
+                    
+                    }
+                  }
+                }
+              }
+            }
+    
+              .graph-img img {
+                 
+              }
+            }
+    
+           .location-area{
+            width: 100%;
+            .sales-card {
+             
+    
+              .sales-header {
+               
+    
+                .sales-title {
+                font-size: 1rem;
+                }
+                .btn-sales {
+                font-size: 0.5rem;
+                }
+              }
+    
+              .location-img {
+              
+  
+             .location{
+              
+             }
+              }
+              .progress {
+                .progress-1 {
+    
+                  .country-name {
+    
+                    .text {
+                    }
+                    .percentage {
+                    }
+                  }
+    
+                  .progress-bar {
+    
+                    .full {
+                    }
+                    .half {
+                    }
+                  }
+                }
+              }
+            }
+           }
+          }
+        }
+      }
+  }

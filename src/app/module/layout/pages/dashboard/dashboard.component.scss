@@ -1,0 +1,32 @@
+@use "base" as*;
+.side-bar{
+ position: fixed;
+top: 0;
+left: 0;
+z-index: 3;
+   }
+.dashboard-main{
+    padding-left: 17.6rem;
+   height: 100vh;
+ 
+//    padding-right: 5rem;
+//    width: auto;
+  
+    .main-content{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 500px) {
+.dashboard-main{
+    padding-left: 14.6rem;
+}
+
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+
+    .dashboard-main{
+        padding-left: 0;
+    }
+}
+

@@ -1,0 +1,85 @@
+@use "base" as *;
+
+.main{
+    position: relative;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    background-color: #fff;
+    // position: fixed;
+    .container{
+        width: 100%;
+        .row{
+        
+            .content{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                .item1{
+                    .text{
+                      font-size: 1rem;
+                      color: rgb(152, 151, 151);
+                    }
+                }
+            }
+            .setting{
+              
+                position: fixed;
+                display: flex;
+                align-items: center;
+                background: blue;
+                justify-content: center;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                // top: 31rem;
+                bottom: 3rem;
+                right: 2rem;
+                .setting-icon{
+                    animation: rotate 2s linear infinite;
+                    color: #ffffff;
+                    font-size: 2.5rem;
+                }
+              
+            }
+            @keyframes rotate {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+  .main{
+
+    .container{
+      
+        .row{
+        
+            .content{
+               flex-direction: column;
+                .item1{
+                    .text{
+                      
+                    }
+                }
+            }
+            .setting{
+              
+              display: none;
+                .setting-icon{
+                   
+                }
+              
+            }
+           
+        }
+    }
+}
+}

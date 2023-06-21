@@ -1,0 +1,378 @@
+@use "base" as *;
+.main {
+  padding: 8rem 2rem 1rem 2rem;
+  background-color: #f3f3f9;
+  width: 100%;
+
+  .container {
+    .row {
+      justify-content: space-between;
+      .col-md-6 {
+        .texts {
+          list-style-type: none;
+          .heading {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          .sub-heading {
+            font-size: 0.9rem;
+            color: #97a4b9;
+          }
+        }
+
+        .side-sec {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          form { 
+            #calendar { 
+              height: 2.5rem; 
+              width: 15rem; 
+              padding: 1rem; 
+              border: #fff; 
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+              border-radius: 3px; 
+            } 
+ 
+            input[type="date"]::-webkit-calendar-picker-indicator { 
+              background: transparent; 
+              bottom: 0; 
+              color: transparent; 
+              cursor: pointer; 
+              height: auto; 
+              left: 0; 
+              position: absolute; 
+              right: 0; 
+              top: 0; 
+              width: auto; 
+            } 
+          } 
+          .cal-icon { 
+            display: flex; 
+            align-items: center; 
+            background-color:#40519a; 
+            color: #fff; 
+            height: 2.5rem; 
+            padding: 1rem; 
+            .calendar-icon { 
+              font-size: 15px; 
+            } 
+          }
+.btn-main{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  .btn1 {
+    color: #0ab39c;
+    background-color: #4ff5e1a0;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    width: 8rem;
+    border: none;
+    border-radius: 3px;
+   align-items: center;
+   justify-content: center;
+    cursor: pointer;
+
+
+    &:hover{
+      background-color: #0bae85de;
+      color: #fff;
+      .plus-icon{
+        color: #fff;
+      }
+    }
+    .plus-icon{
+      font-size: 1rem;
+      color: #0ab39c;
+      margin-right: 0.3rem;
+    }
+
+    }
+  
+
+  .btn2 {
+    color: #0ab39c;
+    background-color: #dbecf0;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 3px;
+  }
+}
+        }
+      }
+      }
+    }
+
+    .card-row {
+     
+      padding-top: 2rem;
+      width: 100%;
+     .card-row1{
+      width: 100%;
+      gap: 2rem;
+      .col-md-3 {
+        width: 23%;
+        background-color: white;
+        padding: 1rem 1rem 1.5rem 1rem;
+        border-radius: 7px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        
+
+        
+        
+
+          &:hover {
+            transition: all 0.5s ease-out;
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+          }
+
+          .earnings {
+            justify-content: space-between;
+            .earning-text {
+              font-size: 1rem;
+              color: #878a99 !important;
+              font-weight: 600;
+            }
+            .earned-amount {
+              align-items: center;
+              gap: 0.2rem;
+              .arrow {
+                font-size: 0.8rem;
+                color: #4ec8b7;
+              }
+              .amount {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #4ec8b7;
+              }
+            }
+          }
+
+          .main-amount {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+          }
+          .down-content {
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-top: 1rem;
+            .underline-text {
+              color: gray;
+              font-size: 0.9rem;
+              font-weight: 400;
+              text-decoration: underline;
+            }
+            .money-icon {
+              border-radius: 3px;
+              background-color: #d8edf9;
+              height: 3.2rem;
+              width: 3.2rem;
+              text-align: center;
+
+              .money {
+                font-size: 1.5rem;
+                color: #4ec8b7;
+                transform: translate(0%, 50%);
+              }
+            }
+          }
+
+        }
+     }
+        // .card:hover{
+        //   transform: translateY(-8px);
+        //   cursor: pointer;
+        
+        // }
+      }
+    }
+  
+
+  @media only screen and (max-width: 1024px) and (min-width: 500px) {
+    .main {
+      
+    
+      .container {
+        width: 100%;
+        .row {
+         width: 100%;
+          .col-md-6 {
+            width: 100%;
+            .texts {
+           
+              .heading {
+                font-size: 1rem;
+              
+              }
+              .sub-heading {
+                font-size: 0.8rem;
+                
+              }
+            }
+    
+            .side-sec {
+              
+    
+              form {
+                input {
+                  height: 2rem;
+                  width: 11rem;
+                  border: none;
+                
+                }
+              }
+    
+              .btn1 {
+               
+              
+               
+              
+                  .plus-icon{
+                  }
+                }
+                
+              .btn2 {
+               
+              }
+                
+    
+                }
+              }
+    
+            }
+              .card-row {
+               
+               .card-row1{
+               flex-wrap: wrap;
+                .col-md-3 {
+                  width: 46%;
+                    .earnings {
+                      .earning-text {
+                      }
+                      .earned-amount {
+                        .arrow {
+                        }
+                        .amount {
+                        }
+                      }
+                    }
+          
+                    .main-amount {
+                    }
+                    .down-content {
+                      .underline-text {
+                      }
+                      .money-icon {
+          
+                        .money {
+                        }
+                      }
+                    }
+          
+                  }
+               }
+                
+                }
+
+           
+            }
+          }
+        }
+    
+        @media only screen and (max-width: 500px) and (min-width: 320px) {
+          .main {
+            padding: 6rem 1rem 1rem 1rem;
+    
+            .container {
+              width: 100%;
+              .row {
+                flex-direction: column;
+               width: 100%;
+                .col-md-6 {
+                  width: 100%;
+                  .texts {
+                 
+                    .heading {
+                      font-size: 1rem;
+                    
+                    }
+                    .sub-heading {
+                      font-size: 0.8rem;
+                      
+                    }
+                  }
+          
+                  .side-sec {
+                    
+          padding-top: 1rem;
+                    form {
+                      input {
+                        height:2rem;
+                        width: 7rem;
+                      }
+                    }
+          
+                    .btn1 {
+                     
+                    height: 2rem;
+                     
+                    
+                        .plus-icon{
+                        }
+                      }
+                      
+                    .btn2 {
+                     height: 2rem;
+                    }
+                      
+          
+                      }
+                    }
+          
+                  }
+                    .card-row {
+                     
+                     .card-row1{
+                     flex-wrap: wrap;
+                      .col-md-3 {
+                        width: 100%;
+                          .earnings {
+                            .earning-text {
+                            }
+                            .earned-amount {
+                              .arrow {
+                              }
+                              .amount {
+                              }
+                            }
+                          }
+                
+                          .main-amount {
+                          }
+                          .down-content {
+                            .underline-text {
+                            }
+                            .money-icon {
+                
+                              .money {
+                              }
+                            }
+                          }
+                
+                        }
+                     }
+                      
+                      }
+      
+                 
+                  }
+                }
+        } 
+      
+  

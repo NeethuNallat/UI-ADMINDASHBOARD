@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@use "base" as* ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+
+}
+.active{
+    .sidebar{
+        width: 90px !important;
+    }
+   .header{
+    padding-left: 5rem !important;
+   }
+   .dashboard-main{
+    padding-left: 2.8rem !important;
+   }
+   .menu-text{
+    display: none;
+   }
+   .dashboard-h3{
+    display: none;
+   }
+   .down-arrow{
+    display: none;
+   }
+   .dashbrd-icon{
+    font-size: 2rem !important;
+   }
+   .small-logo{
+    display: block !important;
+   }
+   .brand-name{
+    display: none;
+   }
+   .brand{
+    padding: 0.5rem 0rem 0.5rem 0rem;
+   } 
+   .header-arrow{
+    display: block !important;
+   }    
+   .icon-toggle{
+    display: none;
+   }
+}
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+.active{
+    .dashboard-main{
+        padding-left: 0 !important;
+    }
+    .header{
+        padding-left: 0 !important;
+    }
+}
+}
